@@ -1,0 +1,114 @@
+body {
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+}
+
+.page {
+}
+
+.page-container {
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-tittle {
+}
+
+.page-action {
+}
+
+.page-theme:active {
+    opacity: 0;
+    visibility: visible;
+}
+
+.page-theme {
+    border: none;
+    padding: 30px;
+    opacity: 1;
+    background: url(./img/1774834.svg) 0 0 / 100% no-repeat;
+}
+
+.page-reset {
+    padding: 30px;
+    border: none;
+    opacity: 1;
+    visibility: hidden;
+    background: url(./img/1774834.svg) 0 0 / 100% no-repeat;
+}
+
+.page-reset:active {
+    padding: 10px;
+    opacity: 0;
+    visibility: visible;
+}
+
+.page-reset::before {
+    content: 'x';
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    font-size: 7px;
+    border-radius: 50%;
+    line-height: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #666;
+}
+
+.page-text {
+    line-height: 150%;
+}
+
+.page-text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+        background-color: #333;
+    }
+}
+
+html.dark body {
+    color: #fff;
+    background-color: #333;
+}
+
+html.light body {
+    background-color: #fff;
+    color: #333;
+}
+
+html.dark .page-theme {
+    background: url(./img/1774834.svg) 0 0 / 100% no-repeat;
+}
+
+html.light .page-theme {
+    background: url(./img/41191.svg) 0 0 / 100% no-repeat;
+}
+
+.page-theme img {
+    fill: #000;
+}
+
+.page-reset img {
+    fill: #000;
+}
