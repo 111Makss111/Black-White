@@ -37,6 +37,7 @@ body {
 
 .page-theme {
     border: none;
+    visibility: visible;
     padding: 30px;
     opacity: 1;
     background: url(./img/1774834.svg) 0 0 / 100% no-repeat;
